@@ -10,7 +10,8 @@ public class Pirata {
 	public Pirata() {
 		this.puntos = 0;
 		this.estado = new Saludable();
-		this.estado.setAtributosPirata(this);
+		this.ataque = this.estado.setAtaque();
+		this.defensa = this.estado.setDefensa();
 	}
 
 	public Estado getEstado() {
@@ -41,7 +42,8 @@ public class Pirata {
 		Estado estadoAnterior = this.estado;
 		this.estado = this.estado.beberGrog();
 		if (this.estado.getEstadoPirata() != estadoAnterior.getEstadoPirata()) {
-			this.estado.setAtributosPirata(this);
+			this.ataque = this.estado.setAtaque();
+			this.defensa = this.estado.setDefensa();
 		}
 	}
 
@@ -49,7 +51,8 @@ public class Pirata {
 		Estado estadoAnterior = this.estado;
 		this.estado = this.estado.beberJugo();
 		if (this.estado.getEstadoPirata() != estadoAnterior.getEstadoPirata()) {
-			this.estado.setAtributosPirata(this);
+			this.ataque = this.estado.setAtaque();
+			this.defensa = this.estado.setDefensa();
 		}
 	}
 

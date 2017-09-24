@@ -12,6 +12,8 @@ public abstract class Estado {
 		return this.estadoPirata;
 	}
 
-	public abstract void setAtributosPirata(Pirata pirata);
-
+	public abstract int setAtaque();
+	
+	public abstract int setDefensa();
+	
 }
