@@ -20,12 +20,12 @@ public class Escorbuto extends Estado {
 	}
 
 	@Override
-	public int setAtaque() {
+	public int getAtaque() {
 		return ATAQUE;
 	}
 
 	@Override
-	public int setDefensa() {
+	public int getDefensa() {
 		return DEFENSA;
 	}
 
